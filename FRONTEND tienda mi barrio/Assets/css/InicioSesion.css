@@ -1,0 +1,80 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background-color: #fff;
+    padding: 15px;
+    /* Reducir el padding para disminuir el espacio dentro del contenedor */
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    /* Reducir el ancho del contenedor */
+    max-width: 300px;
+    /* Ajusta el ancho máximo según tu preferencia */
+    text-align: center;
+    margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 3px;
+    /* Reducir el espacio entre las etiquetas */
+    color: #555;
+}
+
+input {
+    margin-bottom: 10px;
+    /* Reducir el espacio entre los campos de entrada */
+    padding: 8px;
+    /* Reducir el padding de los campos de entrada */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 12px;
+    /* Reducir el tamaño de la fuente */
+}
+
+button {
+    padding: 10px;
+    /* Reducir el padding del botón */
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    /* Reducir el tamaño de la fuente */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#registerContainer {
+    display: none;
+}

@@ -1,0 +1,134 @@
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+    font-family: Arial, sans-serif;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 0;
+}
+
+.imagen {
+    background-image: url(https://images.pexels.com/photos/5498225/pexels-photo-5498225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 600px;
+    margin: 0;
+}
+
+.banner {
+    background-size: cover;
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    padding: 2rem;
+}
+
+.h2 {
+    font-family: 'Libre Baskerville';
+    font-size: 10rem; /* Aumenta el tamaño de la letra */ 
+}
+
+.p1{
+    font-family: 'Libre Baskerville';
+    font-size: 2rem; /* Aumenta el tamaño de la letra */
+}
+
+
+.definicion {
+    background-color: #c4ebff;
+    padding: 2rem;
+    text-align: left;
+}
+
+.carousel-inner .carousel-item img {
+    max-width: 400px; /* Ajusta este valor según sea necesario */
+    max-height: 400px; /* Ajusta este valor según sea necesario */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.servicios {
+    background-color: #c4ebff;
+    padding: 2rem;
+    margin: 0;
+}
+
+.card {
+    background: linear-gradient(to bottom, #A0E9FF, #CDF5FD);
+    /* Fondo en degradado */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    height: 200px;
+    margin: 5px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.card::before {
+    background-color: white;
+    /* Fondo blanco translúcido encima del degradado */
+    border-radius: 10px;
+    bottom: 5px;
+    content: "";
+    left: 5px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    opacity: 0.8;
+    /* Añadir opacidad */
+    z-index: -1;
+    /* Poner detrás del contenido */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-content {
+    color: #333;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    /* Para que el contenido se muestre encima del fondo blanco translúcido */
+}
+
+.card-title {
+    margin-top: 0;
+}
+
+.card-text {
+    margin-bottom: 0;
+    position: relative;
+}
+
+.card-text::after {
+    background-color: white;
+    /* Fondo blanco */
+    content: "";
+    height: 100%;
+    left: -10px;
+    position: absolute;
+    top: 0;
+    width: calc(100% + 20px);
+    z-index: -1;
+    /* Poner detrás del texto */
+}
+
+footer {
+    color: #868e96;
+}
